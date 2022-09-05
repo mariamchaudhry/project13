@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VASL HANDICRAFTS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./jquery-ui-1.13.1.custom/jquery-ui.min.css">
+    <script src="./jquery-ui-1.13.1.custom/external/jquery/jquery.js"></script>
+    <script src="./jquery-ui-1.13.1.custom/jquery-ui.min.js"></script>
+    <style>
+     
+      a:link
+      {
+color: white;
+text-decoration: none;
+      }
+      a:visited
+      {
+color: white;
+text-decoration: none;
+      }
+      a:active
+      {
+color: white;
+text-decoration: none;
+      }
+      a:hover{
+        color: white;
+      }
+      .abc:link{
+        color: black;
+        text-decoration: none;
+      }
+      .abc:visited{
+        color: black;
+        text-decoration: none;
+      }
+      .abc:active{
+        color: black;
+        text-decoration: none;
+      }
+      .abc:hover{
+        color: black;
+      }
+      .zoomin:hover
+      {
+        transform: scale(1.1);
+        opacity: 0.7;
+      }
+      /* .effect:hover{
+        transform: translatey(40px);
+      } */
+      .wd
+      {
+        background-image: url(./POTTERY/pottery\ and\ ceramics.jpg);
+        background-size: cover;
+      } .ab:link
+          {
+      color: darkcyan;
+      text-decoration: none;
+          }
+         .ab:visited
+          {
+      color:darkcyan;
+      text-decoration: none;
+          }
+          .ab:active
+          {
+      color: darkcyan;
+      text-decoration: none;
+          }
+          .ab:hover{
+            color: darkcyan;
+          }
+      /* .bd{
+        transition: 2s;
+      } */  
+      .hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  width: 89%;
+  height: 96%;
+  left: 6%;
+  top: 2%;
+  border-radius: 80%;
+  border: 2px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(50%,50%,0);
+  transform: translate3d(50%,50%,0);
+}
+
+.hovereffect:hover .overlay {
+  background-color: rgba(0,0,0,0.3);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.4" /><feFuncG type="linear" slope="1.4" /><feFuncB type="linear" slope="1.4" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(1.4);
+  -webkit-filter: brightness(1.4);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 26px;
+  padding: 10px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-150%,-400%,0);
+  transform: translate3d(-150%,-400%,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-150%,-400%,0);
+  transform: translate3d(-150%,-400%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2, .hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+/* .img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+} */
+    </style>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="icon shortcut" href="./logomain.png">
+   
+</head>
+<body >
+  
+   <!-- <div id="dia" title="LOGIN FORM" class="img"  >
+    <form style="width: 100%;">
+<label style="color: rgb(127,4,63);font-family: 'Times New Roman', Times, serif;font-weight: bold;" >Username</label>
+<input type="text" class="form-control" autofocus required placeholder="Enter your name"  >
+<label style="color: rgb(127,4,63);font-family: 'Times New Roman', Times, serif;font-weight: bold;">E-mail</label>
+<input type="email" class="form-control" required  placeholder="vasl@example.com">
+<label style="color: rgb(127,4,63);font-family: 'Times New Roman', Times, serif;font-weight: bold;" >Phone Number</label>
+<input type="number" class="form-control" required placeholder="Your Phone-number">
+<label style="color: rgb(127,4,63);font-family: 'Times New Roman', Times, serif;font-weight: bold;" >Billing Address</label>
+<input type="text" class="form-control" required placeholder="Billing Address">
+<label style="color: rgb(127,4,63);font-family: 'Times New Roman', Times, serif;font-weight: bold;">Your Address</label>
+<input type="text" class="form-control" required placeholder="Your Address">
+<label style="color: rgb(127,4,63);font-family: 'Times New Roman', Times, serif;font-weight: bold;" >City </label>
+<input type="text" class="form-control"  required placeholder="Your City" >
+<label style="color: rgb(127,4,63);font-family: 'Times New Roman', Times, serif;font-weight: bold;" >Zip Code </label>
+<input type="number" class="form-control" required placeholder="Zip Code">
+<div class="mt-2">
+<button class="btn btn-success me-3" style="width: 100px;height: 40px;text-align: center;font-size: 25px;">Submit</button><button class="btn btn-success" style="width: 100px;height: 40px;text-align: center;font-size: 25px;">Reset</button>
+</div>
+    </form>
+  </div> --> 
+  <div class="sticky-top" style="background-color:white ;">
+   <Center> <img src="./logomain.png" style="width: 220px;height: 150px;background-color: white;" alt="" class="sticky-top" ></Center>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="background-color:rgb(127,4,63)
+!important;text-align:center ;padding: 5px;" >
+    <div class="container-fluid" >
+      <a class="navbar-brand" href="./index.html"  style="color:white;font-family:'Times New Roman', Times, serif ;font-size: 23px;margin-left: 45px;">HOME</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./AboutUs.html"  style="color:white;font-family:'Times New Roman', Times, serif ;font-size: 23px;margin-left: 70px;">ABOUTUS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Gallery.html" style="color:white;font-family:'Times New Roman', Times, serif ;font-size: 23px;margin-left: 70px;">GALLERY</a>
+          </li>
+
+
+          <li class="nav-item dropdown"  >
+            <a class="nav-link dropdown-toggle abc"  href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;font-family:'Times New Roman', Times, serif ;font-size: 23px;margin-left: 70px;">
+              HANDICRAFTS PRODUCTS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:rgb(127,4,63)
+            !important;">
+              
+              <li><a class="dropdown-item abc" href="#" style="text-decoration: underline;text-align: center;color:
+              black;font-weight: bold;">HOME DECOR</a></li>
+              <ul>
+                 <a href="./cusions.html" class="abc"><li style="color:white;"> Cushions</li></a>
+                 <a href="./lamps.html" class="abc"><li  style="color:white ;"> Lamps</li></a>
+                 <a href="./Planters.html" class="abc"><li  style="color:white ;"> Planters</li></a>
+                 <a href="./wallhangings.html" class="abc"><li  style="color:white ;"> Wall hangings</li></a>
+                 <a href="./candles.html" class="abc"><li  style="color:white ;"> Candles</li></a>
+                 <a href="./kitchenaccessories.html" class="abc"><li  style="color:white ;"> Kitchen Accessories</li></a>
+                 <a href="./pottery.html" class="abc"><li style="color:white;"> Pottery</li></a>
+             </ul>
+             <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item abc" href="#" style="text-decoration: underline;text-align: center;color: black;font-weight: bold;">JEWELLERY</a></li>
+              <ul>
+              <a href="./pendants.html" class="abc"><li style="color:white ;">Pendants</li></a>
+              <a href="./rings.html" class="abc"><li style="color:white ;">Rings</li></a>
+              <a href="./earings.html" class="abc"><li style="color:white ;">Earings</li></a>
+            </ul> 
+               <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item abc" href="#" style="text-decoration: underline;text-align: center;font-weight: bold;color: black;">HANDICRAFTS DECORATIVES</a></li>
+
+              <ul>
+              <a href="./iron.html" class="abc"><li style="color:white;"> Iron Handicrafts </li></a>
+              <a href="./brass.html" class="abc"><li style="color:white;"> Brass Handicrafts</li></a>
+              <a href="./wood.html" class="abc"><li style="color:white;"> Wood Handicrafts</li></a>
+              <a href="./glass.html" class="abc"><li style="color:white;"> Glass Handicrafts</li></a>
+              <a href="./aluminium.html" class="abc"><li style="color:white;"> Aluminium Handicrafts</li></a>
+            </ul>
+             <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item abc" href="#" style="text-decoration: underline;text-align: center;font-weight: bold;color: black;">SINDHI CULTURE</a></li> 
+              <ul>
+                  <a href="./ajrak.html" class="abc"><li style="color:white ;"> Ajraks</li></a>
+              </ul>
+              <li><hr class="dropdown-divider"></li>
+            </ul>
+          </li>
+         
+          <!-- <li class="nav-item dropdown"  >
+            <a class="nav-link dropdown-toggle abc"  href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;font-family:'Times New Roman', Times, serif ;font-size: 23px;margin-left: 70px;">
+            JEWELLERY
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1" style="background-color:rgb(127,4,63)
+            !important;">
+              
+              <li><a class="dropdown-item abc" href="#" style="text-decoration: underline;text-align: center;color:
+              black;font-weight: bold;">CATEGORIES</a></li>
+              <ul>
+                 <a href="./cusions.html" class="abc"><li style="color:white;"> Rings</li></a>
+                 <a href="./lamps.html" class="abc"><li  style="color:white ;">Pendants</li></a>
+                 <a href="./Planters.html" class="abc"><li  style="color:white ;"> Earings</li></a>
+                
+             </ul>
+             <li><hr class="dropdown-divider"></li>
+            </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="./Faqs.html" style="color:white;font-family:'Times New Roman', Times, serif ;font-size: 23px;margin-left: 70px;">FAQS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./ContactUs.html" style="color:white;font-family:'Times New Roman', Times, serif ;font-size: 23px;margin-left: 70px;">CONTACTUS</a>
+          </li>
+         </ul>
+        
+      </div>
+    </div>
+  </nav></div>
+<!-- navbar -->
+<!-- <div class="container-fluid"> -->
+<!-- slider -->
+
+<div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel" style="background-color:white;">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <!-- <div class="row"> -->
+        <!-- <div class="col-12"> -->
+        <!-- <video src="./slider4.mp4" loop autoplay muted  style=" height: 500px;width: 100% !important;"  type="video/mp4" class="d-block w-100"  alt="...">   -->
+          <img src="./SLIDER/main.jpg" style="width: 100%;height: 400px; " alt="">  
+        <!-- </div> </div> -->
+    </div>
+
+    <div class="carousel-item" style="width:100% !important ;">
+      <!-- <video src="./slider3.mp4" loop autoplay muted type="video/mp4"  height="500px" class="d-block w-100" alt="..."> -->
+        <img src="./SLIDER/slider.jpg" style="width: 100%;height: 400px; " alt="">
+    </div>
+  
+    <div class="carousel-item">
+      <!-- <video src="./slider2.mp4" loop autoplay muted type="video/mp4"  height="500px" class="d-block w-100" alt="..."> -->
+        <img src="./SLIDER/a1.jpg" style="width: 100%;height: 400px; " alt="">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- slider -->
+<!-- homedecor -->
+<div class="container" >
+ <h3 style="text-align: Center;font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;background-color: rgb(127,4,63);color: white;border-radius: 17px;padding: 11px;" class="mt-5">&nbsp; ⫹ Home Decor ⫺</h3>
+<p style="text-align: Center;font-family: 'Times New Roman', Times, serif;font-size: 22px;color:rgb(127,4,63) ;">Renew the energy of your living space by shopping from our artistic home décor collection.</p>
+<div class="row mt-4">
+<div class="col me-2">
+<!-- <div class="card" style="height: 320px;"> -->
+  <!-- <div class="card-header"> -->
+<a href="./cusions.html"><img src="./CUSIONS/CM.jpeg" class="img-fluid img-thumbnail border-dark zoomin" style="width:280px ;height:250px;" alt=""  ></a> <!--</div>-->
+<div class="card-body">
+<p style="text-align: center;font-family: 'Times New Roman', Times, serif;font-size: 20px;font-weight: bold;color:rgb(127,4,63) ;" >Cushions</p>
+</div>
+<!-- </div> -->
+</div>
+
+<div class="col me-2">
+  <!-- <div class="card" style="height: 320px;"> -->
+    <!-- <div class="card-header">-->  <a href="./kitchenaccessories.html"><img src="./KITCHEN ACCESSORIES/KMAIN.jpeg" style="width:280px ;height:250px;" class="img-fluid img-thumbnail border-dark zoomin" alt=""></a><!--</div> -->
+    <div class="card-body"><p style="text-align: center;font-weight: bold;font-family: 'Times New Roman', Times, serif;font-size: 20px;color:rgb(127,4,63) ;">Kitchen Accessories</p></div>
+    <!-- </div> -->
+</div>
+<div class="col me-2">
+  <!-- <div class="card" style="height: 320px;"> -->
+    <!-- <div class="card-header">--> <a href="./Planters.html"><img src="./PLANTERS/PL1.jpg" style="width:280px ;height:250px;" class="img-fluid img-thumbnail border-dark zoomin" alt=""></a><!--</div> -->
+    <div class="card-body"><p style="text-align: center;font-family: 'Times New Roman', Times, serif;font-size: 20px;font-weight: bold;color:rgb(127,4,63) ;">Planters</p></div>
+    <!-- </div> -->
+
+</div>
+<div class="col">
+  <!-- <div class="card" style="height: 320px;"> -->
+    <!-- <div class="card-header">--> <a href="./lamps.html"><img src="./LAMPS/LM.jpg" style="width:250px ;height:250px;" class="img-fluid zoomin img-thumbnail border-dark" alt=""></a><!--</div> -->
+    <div class="card-body"><p style="text-align: center;font-family: 'Times New Roman', Times, serif;font-size: 20px;font-weight: bold;color:rgb(127,4,63) ;">Lamps</p></div>
+    <!-- </div> -->
+</div>
+</div>
+
+</div>
+
+<!-- homedecor -->
+<!-- JEWELLERY -->
+<div class="container">
+<h3 style="text-align: Center;font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;background-color: crimson;color: white;border-radius: 17px;padding: 11px;"  class="mt-5">₰ Jewellery ₰</h3>
+<p style="text-align: Center;font-family: 'Times New Roman', Times, serif;font-size: 22px;color: crimson;">We have a wide range of jewellery products handcrafted beautifully by artisans from Pakistan.</p>
+<div class="row mt-4">
+<div class="col">
+<!-- <div class="card" style="height: 320px;"> -->
+  <!-- <div class="card-header"> -->
+  <center><a href="./pendants.html"><img src="./PENDANTS/pmain.jpeg" class="img-fluid img-thumbnail border-dark zoomin" style="width:280px ;height:250px;" alt="" ></a></center>
+<!-- </div> -->
+<div class="card-body">
+<p style="text-align: center;font-family: 'Times New Roman', Times, serif;font-size: 20px;font-weight: bold;color: crimson;">Pendants</p>
+</div>
+<!-- </div> -->
+</div>
+
+<div class="col">
+  <!-- <div class="card" style="height: 320px;"> -->
+    <!-- <div class="card-header"> -->
+      <center><a href="./rings.html"><img src="./RINGS/rm.png" style="width:280px ;height:250px;" class="img-fluid img-thumbnail border-dark zoomin" alt=""></a></center>
+    <!-- </div> -->
+    <div class="card-body"><p style="text-align: center;font-family: 'Times New Roman', Times, serif;font-size: 20px;font-weight: bold;color: crimson;">Rings</p></div>
+    <!-- </div> -->
+</div>
+<div class="col">
+  <!-- <div class="card" style="height: 320px;"> -->
+    <!-- <div class="card-header"> -->
+      <center><a href="./earings.html"><img src="./EARINGS/emain.jpg" style="width:280px ;height:250px;" class="img-fluid img-thumbnail border-dark zoomin" alt=""></a></center>
+    <!-- </div> -->
+    <div class="card-body"><p style="text-align: center;font-family: 'Times New Roman', Times, serif;font-size: 20px;font-weight: bold;color: crimson;">Earings</p></div>
+    <!-- </div> -->
+
+</div>
+
+</div>
+</div>
+<!-- JEWELLERY -->
+
+<!-- wall hangings -->
+<div class="container">
+  <h3 style="text-align: Center;font-weight: bold;font-family:Georgia, 'Times New Roman', Times, serif;color: white;background-color: olive;border-radius: 17px;padding: 11px;"  class="mt-5"> ◂ Wall Hangings ▸</h3>
+  <p style="text-align: Center;font-family: 'Times New Roman', Times, serif;font-size: 22px;color: olive;"> Wall hangings can add much needed effect to your home interiors, which modifies the tone of the room beautifully or how it feels. </p>
+  <div class="row mt-4">
+  <div class="col me-2">
+  <!-- <div class="card" > -->
+    <!-- <div class="card-header"> -->
+  <a href="./wallhangings.html"><img src="./WALLHANGINGS/wall hanging1.jpg" class="img-fluid img-thumbnail border-dark zoomin" style="width:280px ;height:250px;" alt="" ></a></div>
+  
+  <!-- </div> -->
+  <!-- </div> -->
+  
+  <div class="col me-2">
+    <!-- <div class="card" > -->
+      <!-- <div class="card-header"> -->
+        <a href="./wallhangings.html"><img src="./WALLHANGINGS/wall hanging9.jpg" style="width:280px ;height:250px;" class="img-fluid img-thumbnail border-dark zoomin" alt=""></a>
+      <!-- </div> -->
+
+      <!-- </div> -->
+  </div>
+  <div class="col me-2">
+    <!-- <div class="card" > -->
+      <!-- <div class="card-header"> -->
+        <a href="./wallhangings.html"><img src="./WALLHANGINGS/wall hanging3.jpg" style="width:280px ;height:250px;" class="img-fluid img-thumbnail border-dark zoomin" alt=""></a>
+      <!-- </div>
+   -->
+      <!-- </div>
+   -->
+  </div>
+  <div class="col">
+    <!-- <div class="card" > -->
+      <!-- <div class="card-header"> -->
+        <a href="./wallhangings.html"><img src="./WALLHANGINGS/wall hanging5.jpg" style="width:250px ;height:250px;" class="img-fluid img-thumbnail border-dark zoomin" alt=""></a>
+      <!-- </div> -->
+      
+      <!-- </div> -->
+  </div>
+  </div>
+  
+  </div>
+  
+  <!-- wall hangings -->
+
+
+<!-- sindhi culture -->
+<div class="container">
+  <h3 style="text-align: Center;font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;color: white;background-color: indianred;border-radius: 17px;padding: 11px;"  class="mt-5">⩕ Sindhi Ajrak ⩕</h3>
+  <p style="text-align: Center;font-family: 'Times New Roman', Times, serif;font-size: 22px;color: indianred;">Relish the hues and blues of traditional handmade Ajrak brought to you by the skilful artisans of interior villages in Sindh.</p>
+  <div class="row mt-4">
+  <div class="col">
+  <!-- <div class="card"> -->
+    <!-- <div class="card-header"> -->
+    <center><a href="./ajrak.html"><img src="./AJRAK/a3.jpg" class="img-fluid img-thumbnail border-dark zoomin" style="width:280px ;height:250px;" alt="" ></a></center>
+  <!-- </div> -->
+  
+  <!-- </div> -->
+  </div>
+  
+  <div class="col">
+    <!-- <div class="card"> -->
+      <!-- <div class="card-header"> -->
+        <center><a href="./ajrak.html"><img src="./AJRAK/a8.jpg" style="width:280px ;height:250px;" class="img-fluid img-thumbnail border-dark zoomin" alt=""></a></center>
+      <!-- </div> -->
+     
+      <!-- </div> -->
+  </div>
+  <div class="col">
+    <!-- <div class="card"> -->
+      <!-- <div class="card-header"> -->
+        <center><a href="./ajrak.html"><img src="./AJRAK/a4.jpg" style="width:280px ;height:250px;" class="img-fluid img-thumbnail border-dark zoomin" alt=""></a></center>
+      <!-- </div> -->
+      
+      <!-- </div> -->
+  
+  </div>
+  
+  </div>
+  </div>
+  <!-- sindhi culture -->
+
+<!-- POTTERY -->
+<div class="container">
+  <h3 style="text-align: Center;font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;background-color: rgb(0,85,151);color: white;border-radius: 17px;padding: 11px;"  class="mt-5">⪦ Blue Pottery & Candles ⪧</h3>
+  <p style="text-align: Center;font-family: 'Times New Roman', Times, serif;font-size: 22px;color:rgb(0,85,151) ;">Blue pottery is a microcosm of the Sufi mausoleums dotting Multan and Sindh. Its blue color inspired by the heavenly color preferred by Sufi masters. Its motifs taken from Persian and Turkic calligraphy and miniatures.   </p>
+  <div class="row mt-4">
+  <div class="col me-2">
+  <!-- <div class="card"> -->
+    <!-- <div class="card-header"> -->
+    <center><a href="./pottery.html"><img src="./POTTERY/pottery.jpg" class="img-fluid img-thumbnail border-dark zoomin" style="width:280px ;height:250px;" alt="" ></a></center>
+  <!-- </div> -->
+  
+  <!-- </div> -->
+  </div>
+  
+  <div class="col me-2">
+    <!-- <div class="card"> -->
+      <!-- <div class="card-header"> -->
+        <center><a href="./candles.html"><img src="./CANDLES/canma1.jpg" style="width:280px ;height:250px;" class="img-fluid img-thumbnail border-dark zoomin" alt=""></a> </center>
+      <!-- </div> -->
+     
+      <!-- </div> -->
+  </div>
+  <div class="col me-2">
+    <!-- <div class="card"> -->
+      <!-- <div class="card-header"> --> 
+      <center><a href="./pottery.html"><img src="./POTTERY/potterymain2.jfif" class="img-fluid img-thumbnail border-dark zoomin" style="width:280px ;height:250px;" alt="" ></a> </center>
+    <!-- </div> -->
+    
+    <!-- </div> -->
+    </div>
+  <div class="col">
+    <!-- <div class="card"> -->
+      <!-- <div class="card-header"> -->
+        <center><a href="./candles.html"><img src="./CANDLES/canma3.jpg" style="width:280px ;height:250px;" class="img-fluid img-thumbnail border-dark zoomin" alt=""></a> </center>
+      <!-- </div> -->
+      
+      <!-- </div> -->
+  
+  </div>
+  
+  </div>
+  </div>
+<!-- POTTERY -->
+
+<!-- traditional crafts -->
+<div class="container">
+  <h3 style="text-align: Center;font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;color: white;background-color: goldenrod;border-radius: 17px;padding: 11px;"  class="mt-5">※ Traditional Handicrafts ※</h3>
+  <p style="text-align: Center;font-family: 'Times New Roman', Times, serif;font-size: 22px;color: goldenrod;">Pakistan is an old world civilization with a rich history of rich art and culture.</p>
+  <div class="row mt-4">
+  <div class="col me-2">
+  <!-- <div class="card" style="height: 320px;"> -->
+    <!-- <div class="card-header"> -->
+  <a href="./iron.html"><img src="./IRON ITEMS/imain.jpg" class="img-fluid img-thumbnail border-dark zoomin" style="width:290px ;height:250px;" alt="" >   </a> <!--</div>-->
+  <div class="card-body ">
+  <p style="text-align: center;font-family: 'Times New Roman', Times, serif;font-size: 20px;font-weight: bold;color: goldenrod;">Iron Craft</p>
+  </div>
+  <!-- </div> -->
+  </div>
+  
+  <div class="col me-2">
+    <!-- <div class="card" style="height: 320px;"> -->
+      <!-- <div class="card-header">--> <a href="./wood.html"> <img src="./WOOD ITEMS/wood4.jpg" style="width:290px ;height:250px;" class="img-fluid zoomin img-thumbnail border-dark" alt=""></a> <!--</div> -->
+      <div class="card-body"><p style="text-align: center;font-family: 'Times New Roman', Times, serif;font-size: 20px;font-weight: bold;color: goldenrod;">Wood Crafts</p></div>
+      <!-- </div> -->
+  </div>
+  <div class="col me-2">
+    <!-- <div class="card" style="height: 320px;"> -->
+      <!--<div class="card-header">--> <a href="./brass.html"> <img src="./BRASS ITEMS/bmain.PNG" style="width:290px ;height:250px;" class="img-fluid img-thumbnail border-dark zoomin" alt=""> </a> <!--</div>-->
+      <div class="card-body"><p style="text-align: center;font-family: 'Times New Roman', Times, serif;font-size: 20px;font-weight: bold;color: goldenrod;">Brass Crafts</p></div>
+      <!-- </div> -->
+  </div>
+  <div class="col me-2">
+    <!-- <div class="card" style="height: 320px;"> -->
+      <!-- <div class="card-header">--> <a href="./glass.html"><img src="./GLASS ITEMS/g4.jpg" style="width:290px ;height:250px;" class="img-fluid img-thumbnail border-dark zoomin" alt=""></a> <!--</div> -->
+      <div class="card-body"><p style="text-align: center;font-family: 'Times New Roman', Times, serif;font-size: 20px;font-weight: bold;color: goldenrod;">Glass Crafts</p></div>
+      <!-- </div> -->
+  </div>
+
+  <div class="col">
+    <!-- <div class="card" style="height: 320px;"> -->
+      <!-- <div class="card-header">--> <a href="./aluminium.html"><img src="./ALUMINIUM ITEMS/al9.jpg" style="width:260px ;height:250px;" class="img-fluid img-thumbnail border-dark zoomin" alt=""><!--</div> -->
+     </a> 
+      <div class="card-body"><p style="text-align: center;font-family: 'Times New Roman', Times, serif;font-size: 20px;font-weight: bold;color: goldenrod;">Aluminium Crafts</p></div>
+      <!-- </div> -->
+  </div>
+  </div>
+  
+  </div>
+  
+<!-- traditional crafts -->
+<div class="container-fluid">
+<div class="row mt-3 shadow p-4" style="background-color: beige;">
+<div class="col m-4"><video src="./slider3.mp4" style="height: 390px;"  loop autoplay muted type="video/mp4"></video> </div>
+<div class="col mt-4"><p class=" me-3" style="text-align:center ;text-align: justify;font-size: 23px;font-family: 'Times New Roman', Times, serif;color: rgb(88,93,18);"><br> Like other visual arts, handicrafts of Pakistan  are the expression of thoughts and feelings of the craftsmen, influenced by their environment, cultural and social patterns. The tradition of making handicrafts in the region dates back to ancient times.  The legacy of Pakistani culture promises everything- beauty, dignity, form and style. Every city has its own handicrafts specialty ranging from fabric, material, embroidery, to jewelry, carving, mirror work and other handicraft items.</p></div>
+</div>
+</div>
+<!-- slider2 -->
+<div class="container">
+<h2 style="font-weight: bold;text-align:center ;font-family: Georgia, 'Times New Roman', Times, serif;background-color: rgb(250,66,121);color: white;" class="mt-5" >⪷ CATEGORIES ⪸</h2>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row mt-3  mb-3 ">
+          <div class="col hovereffect"> <img src="./CANDLES/can2.jpg" class="d-block w-100 img-fluid img-thumbnail effect " style="width:100px ;border-radius:50%;" alt="..."> <div class="overlay"> <br><h2 style="font-family:'Times New Roman', Times, serif ;">CANDLES</h2> <br>
+            <a class="info btn btn-dark" href="./candles.html"  style="background-color: white;width: 150px ;font-weight: bold;color: black;">Show More</a></div> </div>
+        
+
+
+          <div class="col hovereffect"><img src="./KITCHEN ACCESSORIES/K5.jpg" class="d-block w-100 img-fluid img-thumbnail effect " style="width:100px;border-radius: 50%;" alt="..."><div class="overlay"> <br><h2 style="font-family:'Times New Roman', Times, serif ;">KITCHEN ACCESSORIES</h2>
+            <a class="info btn btn-dark" href="./kitchenaccessories.html"  style="background-color: white;width: 150px ;font-weight: bold;color: black;">Show More</a></div> </div>
+          <div class="col hovereffect"><img src="./LAMPS/L1.jpg" class="d-block w-100 img-fluid img-thumbnail effect "  style="width:100px;border-radius: 50%;"  alt="...">
+            <div class="overlay"> <br><h2 style="font-family:'Times New Roman', Times, serif ;">LAMPS</h2> <br>
+            <a class="info btn btn-dark" href="./lamps.html"  style="background-color: white;width: 150px ;font-weight: bold;color: black;">Show More</a></div> </div>
+          <div class="col hovereffect"><img src="./CUSIONS/c9.jpg" class="d-block w-100 img-fluid img-thumbnail effect "  style="width:100px;border-radius: 50%;"  alt="..."><div class="overlay"> <br><h2 style="font-family:'Times New Roman', Times, serif ;">CUSHIONS</h2> <br>
+            <a class="info btn btn-dark" href="./cusions.html"  style="background-color: white;width: 150px ;font-weight: bold;color: black;">Show More</a></div></div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row mt-3  mb-3 ">
+          <div class="col hovereffect "><img src="./LAMPS/L1.jpg" class="d-block w-100 img-fluid img-thumbnail effect  " style="width:100px ;border-radius:50%;" alt="..."> <div class="overlay"> <br><h2 style="font-family:'Times New Roman', Times, serif ;">LAMPS</h2> <br>
+            <a class="info btn btn-dark" href="./lamps.html"  style="background-color: white;width: 150px ;font-weight: bold;color: black;">Show More</a></div></div>
+          <div class="col hovereffect"><img src="./CUSIONS/c9.jpg" class="d-block w-100 img-fluid img-thumbnail effect " style="width:100px ;border-radius:50%;" alt="..."> <div class="overlay"> <br><h2 style="font-family:'Times New Roman', Times, serif ;">CUSHIONS</h2> <br>
+            <a class="info btn btn-dark" href="./cusions.html"  style="background-color: white;width: 150px ;font-weight: bold;color: black;">Show More</a></div></div>
+          <div class="col hovereffect"><img src="./PLANTERS/PL7.jpg" class="d-block w-100 img-fluid img-thumbnail effect " style="width:100px ;border-radius:50%;" alt="..."> <div class="overlay"> <br><h2 style="font-family:'Times New Roman', Times, serif ;">PLANTERS</h2> <br>
+            <a class="info btn btn-dark" href="./Planters.html"  style="background-color: white;width: 150px ;font-weight: bold;color: black;">Show More</a></div></div>
+          <div class="col hovereffect"><img src="./POTTERY/pottery9 - Copy.jfif" class="d-block w-100 img-fluid img-thumbnail effect " style="width:100px ;border-radius:50%;" alt="..."> <div class="overlay"> <br><h2 style="font-family:'Times New Roman', Times, serif ;">POTTERY</h2> <br>
+            <a class="info btn btn-dark" href="./pottery.html"  style="background-color: white;width: 150px ;font-weight: bold;color: black;">Show More</a></div></div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row mt-3 mb-3 ">
+          <div class="col hovereffect"><img src="./PLANTERS/PL7.jpg" class="d-block w-100 img-fluid img-thumbnail effect" style="width:100px ;border-radius:50%;" alt="..."> <div class="overlay"> <br><h2 style="font-family:'Times New Roman', Times, serif ;">PLANTERS</h2> <br>
+            <a class="info btn btn-dark" href="./Planters.html"  style="background-color: white;width: 150px ;font-weight: bold;color: black;">Show More</a></div></div>
+          <div class="col hovereffect"><img src="./POTTERY/pottery9 - Copy.jfif" class="d-block w-100 img-fluid img-thumbnail effect" style="width:100px ;border-radius:50%;" alt="..."> <div class="overlay"> <br><h2 style="font-family:'Times New Roman', Times, serif ;">POTTERY</h2> <br>
+            <a class="info btn btn-dark" href="./pottery.html"  style="background-color: white;width: 150px ;font-weight: bold;color: black;">Show More</a></div></div>
+          <div class="col hovereffect"><img src="./WOOD ITEMS/w10.jpg" class="d-block w-100 img-fluid img-thumbnail effect" style="width:100px ;border-radius:50%;" alt="..."> <div class="overlay"> <br><h2 style="font-family:'Times New Roman', Times, serif ;">WOOD ITEMS</h2> <br>
+            <a class="info btn btn-dark" href="./wood.html"  style="background-color: white;width: 150px ;font-weight: bold;color: black;">Show More</a></div></div>
+          <div class="col hovereffect"><img src="./IRON ITEMS/i8.jpg" class="d-block w-100 img-fluid img-thumbnail effect" style="width:100px ;border-radius:50%;" alt="..."> <div class="overlay"> <br><h2 style="font-family:'Times New Roman', Times, serif ;">IRON ITEMS</h2> <br>
+            <a class="info btn btn-dark" href="./iron.html"  style="background-color: white;width: 150px ;font-weight: bold;color: black;">Show More</a></div></div>
+        </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+<!-- slider2 -->
+<div class="container">
+<div class="row shadow " style="background-color: beige;">
+   <div class="col m-4 "><h3 style="color:darkcyan ;font-size: 35px;font-family: 'Times New Roman', Times, serif;text-align: justify;" class="display-4"><br> Everything can be made with machines but nothing compares to something made with hands and the heart. Art is not a handicraft,it is the transmission of feeling the artist has experienced.Every decade needs its own manual of handicrafts. </h3></div> 
+  <div class="col m-4 "><img src="./slide1.jpg" style="width: 100%;height:400px;" alt=""></div>
+</div>
+</div>
+<!-- footer -->
+<div class="container-fluid">
+  <div class="row mt-2 shadow p-4 wd" style="height:580px;background-color:black;color:darkcyan;font-weight: bold;font-size: 30px;font-weight: bold;">
+  <div class="col"><iframe class="mt-5 ms-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.3137080837214!2d67.14963081447813!3d24.88727885031247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339999415e0c3%3A0x36742eee0fd9c291!2sAptech%20Metro%20Star%20Gate!5e0!3m2!1sen!2s!4v1652463669583!5m2!1sen!2s" width="400px" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  <div class="col mt-2 "><h3  style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 30px;font-weight: bold;">CATEGORIES</h3>
+    
+    <h5 style="font-weight:bold ;">&nbsp; Home Decor</h5>
+      <a href="./cusions.html" ><h6 style="font-family:'Times New Roman', Times, serif ;font-weight: bold;font-size: 22px;color: rgb(127,4,63);" class="ab">&nbsp;&nbsp; ⇾Cushions</h6></a > 
+      <a href="./lamps.html" ><h6 style="font-family:'Times New Roman', Times, serif ;font-weight: bold;font-size: 22px;color: rgb(127,4,63);" class="ab">&nbsp;&nbsp;⇾Lamps</h6></a > 
+      <a href="./Planters.html"><h6 style="font-family:'Times New Roman', Times, serif ;font-weight: bold;font-size: 22px;color: rgb(127,4,63);" class="ab">&nbsp;&nbsp;⇾Planters</h6></a > 
+      <a href="./wallhangings.html"><h6 style="font-family:'Times New Roman', Times, serif ;font-weight: bold;font-size: 22px;color: rgb(127,4,63);" class="ab">&nbsp;&nbsp;⇾Wall Hangings</h6></a > 
+      <a href="./candles.html"><h6 style="font-family:'Times New Roman', Times, serif ;font-weight: bold;font-size: 22px;color: rgb(127,4,63);" class="ab">&nbsp;&nbsp;⇾Candles</h6></a > 
+      <a href="./kitchenaccessories.html"><h6 style="font-family:'Times New Roman', Times, serif ;font-weight: bold;font-size: 22px;color: rgb(127,4,63);" class="ab">&nbsp;&nbsp;⇾Kitchen Accessories</h6></a > 
+      <a href="./pottery.html"><h6 style="font-family:'Times New Roman', Times, serif ;font-weight: bold;font-size: 22px;color:rgb(127,4,63);" class="ab">&nbsp;&nbsp;⇾Pottery</h6></a > 
+              <h5 style="font-weight: bold;">&nbsp;Jewellery</h5>
+                <a href="./pendants.html"><h6 style="font-family:'Times New Roman', Times, serif ;font-weight: bold;font-size: 22px;color: rgb(127,4,63);" class="ab">&nbsp;&nbsp;⇾Pendants</h6></a > 
+                <a href="./rings.html"><h6 style="font-family:'Times New Roman', Times, serif ;font-weight: bold;font-size: 22px;color: rgb(127,4,63);" class="ab">&nbsp;&nbsp;⇾Rings</h6></a > 
+                <a href="./earings.html"><h6 style="font-family:'Times New Roman', Times, serif ;font-weight: bold;font-size: 22px;color: rgb(127,4,63);" class="ab">&nbsp;&nbsp;⇾Earings</h6></a > 
+                    
+  </div>
+  <div class="col mt-3"><br>
+    <h5 style="font-weight: bold;">&nbsp;Sindhi Culture</h5>
+    <a href="./ajrak.html"><h6 style="font-family:'Times New Roman', Times, serif ;font-weight: bold;font-size: 22px;color: rgb(127,4,63);" class="ab">&nbsp;&nbsp;⇾Ajraks</h6></a>
+  <h5 style="font-weight: bold;">&nbsp;Handicraft Decoratives</h5>
+  <a href="./iron.html"><h6 style="font-family:'Times New Roman', Times, serif ;font-weight: bold;font-size: 22px;color: rgb(127,4,63);" class="ab">&nbsp;&nbsp;⇾Iron Handicrafts</h6></a > 
+  <a href="./wood.html"><h6 style="font-family:'Times New Roman', Times, serif ;font-weight: bold;font-size: 22px;color: rgb(127,4,63);" class="ab">&nbsp;&nbsp;⇾Wood Handicrafts</h6></a > 
+  <a href="./glass.html"><h6 style="font-family:'Times New Roman', Times, serif ;font-weight: bold;font-size: 22px;color: rgb(127,4,63);" class="ab">&nbsp;&nbsp;⇾Glass Handicrafts</h6></a > 
+  <a href="./brass.html"><h6 style="font-family:'Times New Roman', Times, serif ;font-weight: bold;font-size: 22px;color: rgb(127,4,63);" class="ab">&nbsp;&nbsp;⇾Brass Handicrafts</h6></a >  
+  <a href="./aluminium.html"><h6 style="font-family:'Times New Roman', Times, serif ;font-weight: bold;font-size: 22px;color: rgb(127,4,63);" class="ab">&nbsp;&nbsp;⇾Aluminium handicrafts</h6></a > 
+  
+  </div>
+  <div class="col mt-2 "><!--<h3 style="font-family: Georgia, 'Times New Roman', Times, serif;" >--><img src="./logomain.png" style="height: 80px;width:110px;" alt=""> 
+  <a href="./AboutUs.html"><h6 class="mt-4" style="font-family:'Times New Roman', Times, serif ;font-weight: bold;font-size: 22px;color: rgb(127,4,63);" class="ab">&nbsp;&nbsp;•About Us </h6></a>
+  <a href="./ContactUs.html"><h6 class="mt-2" style="font-family:'Times New Roman', Times, serif ;font-weight: bold;font-size: 22px;color: rgb(127,4,63);" class="ab">&nbsp;&nbsp;•Contact Us</h6></a>
+  <a href="./Gallery.html"><h6 class="mt-2" style="font-family:'Times New Roman', Times, serif ;font-weight: bold;font-size: 22px;color: rgb(127,4,63);" class="ab">&nbsp;&nbsp;•Gallery</h6></a>
+  <a href="./Faqs.html"><h6 class="mt-2" style="font-family:'Times New Roman', Times, serif ;font-weight: bold;font-size: 22px;color: rgb(127,4,63);" class="ab">&nbsp;&nbsp;•Faqs</h6></a>
+  <br><br><br>
+  <h4 style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: 30px;font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;Follow Us!<span style="color:red ;">❤</span></h4>
+  <P><a href=""><i class="bi bi-facebook" style="color: blue;font-size: 50px;margin-left: 18px;"></i></a><a href=""><i class="bi bi-instagram"  style="color: crimson;font-size: 50px;margin-left: 10px;"></i></a><a href="" ><i class="bi bi-twitter"  style="color: lightskyblue ;font-size: 50px;margin-left:10px ;"></i></a></P>
+  </div>
+  </div>
+  </div>
+  <!-- footer -->
+  <h3 style="color: white;background-color:rgb(127,4,63);text-align: center;font-family: 'Times New Roman', Times, serif;">&copy; Copyright 2022 Vasl. All rights reserved. Mariam Azhar (WD-Batch-03)</h3>
+
+<!-- </div> -->
+<script>
+  $(document).ready( function() {
+    $( '#dia' ).dialog();
+  } );
+  </script>
+
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
